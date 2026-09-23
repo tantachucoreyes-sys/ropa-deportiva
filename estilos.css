@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Deportivo - SportZone</title>
+    <style>
+        /* Estilos Generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+ 
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+ 
+        /* Encabezado / Header */
+        header {
+            background-color: #1e293b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+ 
+        header h1 {
+            margin-bottom: 5px;
+            font-size: 2rem;
+        }
+ 
+        header p {
+            color: #94a3b8;
+        }
+ 
+        /* Contenedor Principal / Catálogo */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+ 
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+ 
+        /* Tarjeta de Producto */
+        .producto {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+ 
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+ 
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+ 
+        .producto-info {
+            padding: 15px;
+        }
+ 
+        .producto-titulo {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+ 
+        .precio {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #16a34a;
+            margin-bottom: 15px;
+        }
+ 
+        .btn-comprar {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+ 
+        .btn-comprar:hover {
+            background-color: #1d4ed8;
+        }
+ 
+        /* Pie de Página / Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e293b;
+            color: #94a3b8;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+ 
